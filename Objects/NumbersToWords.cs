@@ -83,7 +83,7 @@ namespace NumbersToWords.Objects
         string section = GetGroup(input);
         Console.WriteLine(section);
         result += ConvertGroup(section);
-        input.Remove(input.Length-3, 3);
+        input.Remove(input.Length-3, 0);
 
       }
       Console.WriteLine(input);
