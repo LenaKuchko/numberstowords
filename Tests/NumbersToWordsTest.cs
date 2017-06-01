@@ -24,7 +24,7 @@ namespace NumbersToWords
     public void TestConvertGroup()
     {
       Conversion newConversion = new Conversion();
-      Assert.Equal("eight", newConversion.ConvertGroup(549));
+      Assert.Equal("eight", newConversion.ConvertGroup(122));
     }
   }
 }
