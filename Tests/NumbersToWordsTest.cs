@@ -20,5 +20,11 @@ namespace NumbersToWords
       char [] test = new char [] {'1', '0', '0'};
       Assert.Equal(test, newConversion.GetGroup("1000"));
     }
+    [Fact]
+    public void TestConvertGroup()
+    {
+      Conversion newConversion = new Conversion();
+      Assert.Equal("eight", newConversion.ConvertGroup(549));
+    }
   }
 }

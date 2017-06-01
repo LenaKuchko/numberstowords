@@ -33,5 +33,37 @@ namespace NumbersToWords.Objects
       }
       return array;
     }
+    // public string PrintGroup(int groupCount)
+    // {
+    //   if (groupCount = 3)
+    //   {
+    //
+    //   }
+    //   else if (groupCount = 2)
+    //   {
+    //
+    //   }
+    //   else if (groupCount = 1)
+    //   {
+    //
+    //   }
+    //   else
+    //   {
+    //     return "please enter a number";
+    //   }
+    // }
+    public string ConvertGroup (int groupInput)
+    {
+      string result = "";
+      int hundreds = groupInput/100;
+      int tens = (groupInput % 100)/10;
+      int ones = groupInput % 10;
+      Console.WriteLine(tens);
+      result += uniqueSpecial[hundreds] + "hundred " + uniqueSpecial[tens] + "ty"+ uniqueSpecial[ones];
+      Console.WriteLine(result);
+      return result;
+      // return uniqueSpecial[tens];
+    }
   }
+
 }
